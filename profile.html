@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Jimla-portfolio
+        </title>
+        <style>
+            body{
+                font-family: arial,sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color:#FAE6FA;
+            }
+            header{
+                background-color:#FFCCCC;
+                color: black;
+                text-align: center;
+                padding: 0.5rem 0;
+                position: relative;
+            }
+            .header-content h1
+            {
+                font-size:2.5rem;
+            }
+            .profile
+            {
+                width: 150px;
+                height: 150px;
+                border-radius: 75%;
+                object-fit: cover;
+                position: absolute;
+                top: 0%;
+                left: 65px;         
+               }
+               nav
+               {
+                background-color: #F0B2F0;
+                color: yellow;
+                text-align: center;
+                padding: 0%;
+                font-size: 25px;
+               }
+               nav ul
+               {
+                list-style-type: none;
+                padding: 0;
+               }
+               nav ul li
+               {
+                display: inline;
+                margin: 0 20px;
+
+               }
+               nav ul li a{
+
+                text-decoration: none;
+                color: chocolate;
+               }
+               
+               .section-content
+               {
+                background-color: azure;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                list-style-type: square;
+               }
+               .download-button
+                   {
+                background-color: #EB96EB;
+                color: darkgoldenrod;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+               }
+               .download-button :hover
+               {
+                background-color: #884DFF;
+               }
+               footer
+               {
+                text-align: center;
+                padding: 2rem 0;
+                background-color:#FFCCCC;
+
+                color: black;
+               }
+              
+               
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <img src="jimla.jpg" alt="your profile picture" class="profile">
+                <h1>Jimla M</h1>
+                <p>Becoming a Software Developer</p>
+            </div>
+                    </header>
+
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#academic participation">Academic Participation</a></li>
+                    <li><a href="#award winning">Award Winning</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#extra curricular">Extra Curricular</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+
+            </nav>
+            <section id="About">
+                <div class="section-content">
+                    <h2><i>About</i></h2>
+                    <p><i>This is my own portfolio</i></p>
+                </div>
+            </section>
+            <section id="education">
+                <div class="section-content">
+                    <h2><i>Education</i></h2>
+                    <h4><i>HSC</i></h4>
+                    <p><i>St.John's Girls Higher Secondary School,Nazareth</i></p>
+                    <h4><i>Degree</i></h4>
+                    <p><i>Now I am studying final year of Bachelor of Computer Applications</i></p>
+                </div>
+            </section>
+            <section id="academic participation">
+                <div class="section-content">
+                    <h2><i>Academic Participation</i></h2>
+                    <p><i>I had participate in Paper Presentation 2 times based on below topics<br><ul><li>Sixth sense Technology</li><br><li>Cloud computing</li></ul></i></p>
+                    <p><i>I am also participated in software marketing</i></p>
+                </div>
+            </section>
+            <section id="award winning">
+                <div class="section-content">
+                    <h2><i>Award Winning</i></h2>
+                    <p><i>I am participated in inter college competition and won a prizes<br><ul><li>Debuging</li><br><li>creative coding</li><br><li>Quiz</li></ul></i></p>
+                </div>
+            </section>
+            <section id="skills">
+                <div class="section-content">
+                    <h2><i>Skills</i></h2>
+                    <p>
+                    <ul>
+                        <i><li>Python</li><br></i>
+                       <i> <li>C++</li><br></i>
+                       <i> <li>MySQL</li><br></i>
+                       <i> <li>HTML</li><br></i>
+
+                    </ul>
+                </p>
+                    </div>
+
+            </section>
+            <section id="extra curricular">
+                <div class="section-content">
+                    <h2><i>Extra Curricular Activity</i></h2>
+                    <p><i><ul><li>Reading Books</li><br><li>Listening music</li><br><li>Travelling</li></ul></i></p>
+                </div>
+            </section>
+            <section id="resume">
+                <center>
+                <div class="section-content">
+                    <h2><i>RESUME</i></h2>
+                    <a href="https://drive.google.com/file/d/1dGupG5oBy8cxLEuL9T7_kwvKUzOGxKkB/view?usp=drive_link" class="download-button">download cv</a>
+                </div>
+            </center>
+
+            </section>
+            <footer>For Contact:<br>Email:jobseducation05@gmail.com
+            </footer>
+        <script>
+            document.querySelectorAll('a[href^="#"]').forEach(anchor =>{anchor.addEventListener('click',function(e){
+                e.preventDefault();
+                const targetId=this.getAttribute('href').substring(1);
+                const targetElement=document.getElementById(targetId);
+                if(targetElement){window.scrollTo({
+                    top:targetElement.offsetTop,behavior:'smooth'
+                });
+            }
+            });});
+        </script>                
+    </body>
+</html>
